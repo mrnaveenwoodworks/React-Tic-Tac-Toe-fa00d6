@@ -1,0 +1,46 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.game-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.status-message {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  height: 24px;
+}
+
+.reset-button {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 15px;
+  padding: 8px 16px;
+}
+
+.player-x {
+  color: #2196F3;
+}
+
+.player-o {
+  color: #F44336;
+}
+
+.winner {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
